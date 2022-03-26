@@ -8,6 +8,7 @@ build/
 gradlew.bat
 settings.gradle
 HELP.md
+gradlew
 
 ### STS ###
 .apt_generated
