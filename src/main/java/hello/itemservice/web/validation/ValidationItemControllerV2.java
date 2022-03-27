@@ -171,6 +171,7 @@ public class ValidationItemControllerV2 {
         if (!StringUtils.hasText(item.getItemName())) {
 //            bindingResult.addError(new FieldError("item", "itemName", item.getItemName(), false, new String[]{"required.item.itemName"}, null, null));
             bindingResult.rejectValue("itemName", "required");
+            // new String[]{"required.item.itemName, "required""}
         }
 
         if (item.getPrice() == null || item.getPrice() < 1000 || item.getPrice() > 1000000) {
